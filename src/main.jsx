@@ -21,7 +21,7 @@ import NotFound from './pages/NotFound.jsx';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router>
+    <Router basename={ARTIFACT ? undefined : import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <ToastProvider>
         <Routes>
           <Route element={<Layout />}>

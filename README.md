@@ -8,6 +8,8 @@ npm run dev      # http://localhost:5173
 npm run build    # produkcijski build u dist/
 ```
 
+GitHub Pages: automatski na svaki push na `main` (`.github/workflows/pages.yml`) → https://ppetar57.github.io/tk-classics/
+
 Vercel: framework "Vite", build `npm run build`, output `dist` (SPA rewrites u `vercel.json`).
 
 - Logo: `public/images/logo-light.webp` (tamna slova, za svetlu pozadinu) i `logo-dark.webp` (original).
