@@ -146,6 +146,7 @@ function Footer() {
         <span>© {new Date().getFullYear()} {CLUB.name}</span>
         <span>V1 prototip · rezervacije, nalozi i forme su demo i nisu povezani sa sistemom kluba.</span>
         <Link to="/admin">Demo admin</Link>
+        <span className="credit">By Petar Popovic</span>
       </div>
       <div className="footer__giant" aria-hidden="true">
         CLASSICS

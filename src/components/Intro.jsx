@@ -37,6 +37,7 @@ export default function Intro({ onDone }) {
       <button ref={btn} className="btn btn--lime btn--xl intro__cta" onClick={enter}>
         Rezerviši teren <Icon name="arrow" />
       </button>
+      <p className="credit intro__credit">By Petar Popovic</p>
     </div>
   );
 }
