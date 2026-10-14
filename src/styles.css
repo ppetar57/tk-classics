@@ -3572,8 +3572,8 @@ a.contact-card:hover {
 }
 .player-card {
   display: grid;
-  grid-template-columns: 38% 1fr;
-  min-height: 300px;
+  grid-template-columns: 40% 1fr;
+  align-items: center;
   border-radius: var(--r);
   overflow: hidden;
   background: var(--invert-bg);
@@ -3585,18 +3585,13 @@ a.contact-card:hover {
   box-shadow: var(--shadow-lg);
 }
 .player-card__photo {
-  position: relative;
-  overflow: hidden;
+  display: block;
+  align-self: center;
 }
 .player-card__photo img {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 65% 18%;
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 38%, #000 82%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0, #000 38%, #000 82%, transparent 100%);
+  height: auto;
   transition: transform 0.8s var(--ease);
 }
 .player-card:hover .player-card__photo img {
@@ -3668,22 +3663,17 @@ a.contact-card:hover {
   min-height: min(86vh, 860px);
 }
 .player__photo {
-  align-self: end;
-  max-width: 440px;
-  width: 100%;
+  align-self: center;
   justify-self: center;
+  width: 100%;
+  max-width: min(480px, calc(78vh * 0.8));
 }
 .player__photo img {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 78vh;
-  object-fit: cover;
-  object-position: center top;
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 30%, #000 84%, transparent 100%), linear-gradient(to top, transparent 0, #000 24%, #000 94%, transparent 100%);
-  -webkit-mask-composite: source-in;
-  mask-image: linear-gradient(to right, transparent 0, #000 30%, #000 84%, transparent 100%), linear-gradient(to top, transparent 0, #000 24%, #000 94%, transparent 100%);
-  mask-composite: intersect;
+  border-radius: var(--r);
+  box-shadow: var(--shadow-lg);
   animation: fade 0.8s ease both;
 }
 .player__copy {
@@ -3736,13 +3726,13 @@ a.contact-card:hover {
   }
   .player__photo {
     order: 2;
-    max-width: 320px;
+    max-width: 420px;
+    padding-bottom: 32px;
   }
   .player__copy {
     padding-block: 32px 8px;
   }
   .player-card {
-    grid-template-columns: 40% 1fr;
-    min-height: 240px;
+    grid-template-columns: 1fr;
   }
 }

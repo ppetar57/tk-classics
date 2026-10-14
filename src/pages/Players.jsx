@@ -20,7 +20,7 @@ export function Players() {
             <li key={p.slug}>
               <Link to={`/players/${p.slug}`} className="player-card">
                 <span className="player-card__photo">
-                  <img src={p.photo} alt={p.name} width="546" height="1260" loading="lazy" decoding="async" />
+                  <img src={p.photo} alt={p.name} width="1122" height="1402" loading="lazy" decoding="async" />
                 </span>
                 <span className="player-card__body">
                   <span className="player-card__tag">{p.tag}</span>
@@ -51,7 +51,7 @@ export function Player() {
     <section className="player">
       <div className="container player__inner">
         <div className="player__photo">
-          <img src={p.photo} alt={p.name} width="546" height="1260" decoding="async" />
+          <img src={p.photo} alt={p.name} width="1122" height="1402" decoding="async" />
         </div>
         <div className="player__copy">
           <Link to="/players" className="player__back">
