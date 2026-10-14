@@ -71,7 +71,7 @@ export const PLAYERS = [
     name: 'Zoran Jovanović',
     tag: '#1',
     title: 'Najverniji igrač Classicsa',
-    photo: asset('/images/players/zoran-jovanovic.webp'),
+    photo: asset('/images/players/zoran-jovanovic-2026.webp'),
   },
 ];
 
