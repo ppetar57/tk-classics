@@ -48,6 +48,7 @@ export const NAV = [
   { to: '/pocetna', label: 'Početna' },
   { to: '/skola-tenisa', label: 'Škola tenisa' },
   { to: '/liga', label: 'Liga' },
+  { to: '/players', label: 'Igrači' },
   { to: '/turniri', label: 'Turniri' },
   { to: '/o-klubu', label: 'O klubu' },
   { to: '/kontakt', label: 'Kontakt' },
@@ -62,6 +63,17 @@ export const PHOTOS = {
   action: '1542144582-1ba00456b5e3',
   ball: '1530915365347-e35b749a0381',
 };
+
+// Club players (photos supplied by the club).
+export const PLAYERS = [
+  {
+    slug: 'zoran-jovanovic',
+    name: 'Zoran Jovanović',
+    tag: '#1',
+    title: 'Najverniji igrač Classicsa',
+    photo: asset('/images/players/zoran-jovanovic.webp'),
+  },
+];
 
 // ---------- DEMO DATA (sample only, not real club results) ----------
 export const DEMO_LEAGUE = [

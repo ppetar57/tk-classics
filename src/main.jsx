@@ -17,6 +17,7 @@ import Contact from './pages/Contact.jsx';
 import { Login, Register } from './pages/Auth.jsx';
 import Profile from './pages/Profile.jsx';
 import Admin from './pages/Admin.jsx';
+import { Players, Player } from './pages/Players.jsx';
 import NotFound from './pages/NotFound.jsx';
 
 createRoot(document.getElementById('root')).render(
@@ -37,6 +38,9 @@ createRoot(document.getElementById('root')).render(
             <Route path="registracija" element={<Register />} />
             <Route path="profil" element={<Profile />} />
             <Route path="admin" element={<Admin />} />
+            <Route path="players" element={<Players />} />
+            <Route path="players/:slug" element={<Player />} />
+            <Route path="igraci" element={<Navigate to="/players" replace />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

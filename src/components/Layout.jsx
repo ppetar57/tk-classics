@@ -173,13 +173,14 @@ const TITLES = {
   '/registracija': 'Registracija — TK Classics',
   '/profil': 'Moj profil — TK Classics',
   '/admin': 'Demo admin — TK Classics',
+  '/players': 'Igrači — TK Classics',
 };
 
 export default function Layout() {
   const { pathname } = useLocation();
   const [intro, setIntro] = useState(true);
   useEffect(() => {
-    document.title = TITLES[pathname] || 'TK Classics';
+    if (!pathname.startsWith('/players/')) document.title = TITLES[pathname] || 'TK Classics';
   }, [pathname]);
   return (
     <>
